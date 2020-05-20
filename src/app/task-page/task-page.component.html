@@ -1,27 +1,33 @@
 
-<form class="form-signin">
-  <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-  <h1 class="h3 mb-3 font-weight-normal">Enter Task Below</h1>
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+      
+    <div class="form-group input-group-lg">
+          <input class="form-control" placeholder="Name" formControlName="name">
+      </div>
 
-  <label for="inputEmail" class="sr-only">Name</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
- <br>
- <label for="inputEmail" class="sr-only">Date</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Date" required autofocus>
-  <br>
-  <label for="inputPassword" class="sr-only">Task 1</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Task 1" required>
- <br>
-  <label for="inputEmail" class="sr-only">Task 2</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Task 2" required autofocus>
- <br>
-  <label for="inputPassword" class="sr-only">Task 3</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Task 3" required>
- <br>
-  <label for="inputEmail" class="sr-only">Task 4</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Task 4" required autofocus>
+      <div class="form-group input-group-lg">
+        <input class="form-control" placeholder="Date ex:5/19/2020" formControlName="date">
+    </div>
 
-<br>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit Task</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-</form>
+     <div class="form-group input-group-lg">
+      <input class="form-control" placeholder="Task 1" formControlName="task1">
+    </div>
+
+    <div class="form-group input-group-lg">
+    <input class="form-control" placeholder="Task 2" formControlName="task2">
+  </div>
+
+  <div class="form-group input-group-lg">
+  <input class="form-control" placeholder="Task 3" formControlName="task3">
+  </div>
+
+<div class="form-group input-group-lg">
+  <input class="form-control" placeholder="Task 4" formControlName="task4">
+</div>
+
+      <div class="form-group">
+          <button class="btn btn-primary btn-block btn-lg">Submit Task</button>
+      </div>
+  </form>
+</div>
