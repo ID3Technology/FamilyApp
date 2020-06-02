@@ -8,9 +8,15 @@ export class DataService {
 
   constructor(private HttpClient: HttpClient) { }
 
-  //Method sends form data to backend service
-  public sendFormData(FormData) {
+  //Method sends task form data to backend service
+  public sendTaskData(FormData) {
         return this.HttpClient.post(this.REST_API_SERVER, FormData);
      
   }
+  
+  //Method returns all task data back from the backend service
+  //public returnTaskData(){
+      //return this.HttpClient.get();
+  //}
+
 }

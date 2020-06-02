@@ -13,7 +13,7 @@ import { ViewtaskPageComponent } from './viewtask-page/viewtask-page.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/AppComponent', pathMatch: 'full' },
+ // { path: '', redirectTo: '/AppComponent', pathMatch: 'full' },
   { path: 'task', component: TaskPageComponent },
   { path: 'viewtask', component: ViewtaskPageComponent }
 
