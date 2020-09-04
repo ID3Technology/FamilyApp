@@ -1,0 +1,37 @@
+{
+    "family": [
+      {
+        "id": 1,
+        "name": "dad",
+        "task1": "cleaned room",
+        "task2": "trash",
+        "task3": "laundry",
+        "task4": "cleaned car"
+
+      },
+      {
+        "id": 2,
+        "name": "mother",
+        "task1": "cleaned room",
+        "task2": "trash",
+        "task3": "laundry",
+        "task4": "cleaned car"
+      },
+      {
+        "id": 3,
+        "name": "daughter1",
+        "task1": "cleaned room",
+        "task2": "trash",
+        "task3": "laundry",
+        "task4": "cleaned car"
+      },
+      {
+        "id": 4,
+        "name": "daughter2",
+        "task1": "cleaned room",
+        "task2": "trash",
+        "task3": "laundry",
+        "task4": "cleaned car"
+      }
+    ]
+  }

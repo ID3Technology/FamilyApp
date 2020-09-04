@@ -4,5 +4,10 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+ // URL of development API
+ apiUserTaskUrl: 'http://localhost:3000/usertask',
+ apiTaskCommentsUrl: 'http://localhost:3000/usertask',
+ apiUserProfileUrl: 'http://localhost:3000/usertask',
+
 };

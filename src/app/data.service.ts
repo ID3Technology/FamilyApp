@@ -1,22 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
+
 
 @Injectable()
 export class DataService {
-
-    private REST_API_SERVER = "http://localhost:3000";
+  
+   API_URL = environment.apiUserTaskUrl;
 
   constructor(private HttpClient: HttpClient) { }
 
-  //Method sends task form data to backend service
-  public sendTaskData(FormData) {
-        return this.HttpClient.post(this.REST_API_SERVER, FormData);
-     
+//Method returns all User Task entered
+  public getAllUserTask() {
+      return this.HttpClient.get(this.API_URL);
   }
-  
-  //Method returns all task data back from the backend service
-  //public returnTaskData(){
-      //return this.HttpClient.get();
-  //}
 
+  
 }
